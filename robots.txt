@@ -1,0 +1,397 @@
+# 阻止所有爬虫访问整个网站
+User-agent: *
+Disallow: /
+
+# 特别阻止常见的爬虫和AI训练爬虫
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: Sogou
+Disallow: /
+
+User-agent: Yandexbot
+Disallow: /
+
+User-agent: facebookexternalhit
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: LinkedInBot
+Disallow: /
+
+User-agent: ia_archiver
+Disallow: /
+
+User-agent: archive.org_bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BotRightHere
+Disallow: /
+
+User-agent: WebZip
+Disallow: /
+
+User-agent: TightTwatBot
+Disallow: /
+
+User-agent: HaoSouSpider
+Disallow: /
+
+User-agent: EasouSpider
+Disallow: /
+
+User-agent: YetAnotherBot
+Disallow: /
+
+User-agent: GetRight
+Disallow: /
+
+User-agent: wget
+Disallow: /
+
+User-agent: curl
+Disallow: /
+
+User-agent: python-requests
+Disallow: /
+
+User-agent: python-urllib
+Disallow: /
+
+User-agent: GuzzleHttp
+Disallow: /
+
+User-agent: Java
+Disallow: /
+
+User-agent: Scrapy
+Disallow: /
+
+User-agent: Pydio
+Disallow: /
+
+User-agent: Go-http-client
+Disallow: /
+
+User-agent: node-fetch
+Disallow: /
+
+User-agent: Axios
+Disallow: /
+
+User-agent: HeadlessChrome
+Disallow: /
+
+User-agent: PhantomJS
+Disallow: /
+
+User-agent: Selenium
+Disallow: /
+
+User-agent: Puppeteer
+Disallow: /
+
+User-agent: Playwright
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: omgili
+Disallow: /
+
+User-agent: omgilibot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: GoogleOther
+Disallow: /
+
+User-agent: GoogleOther-Inspection
+Disallow: /
+
+User-agent: Google-Read-Aloud
+Disallow: /
+
+User-agent: Mediapartners-Google
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+User-agent: Googlebot-News
+Disallow: /
+
+User-agent: Googlebot-Mobile
+Disallow: /
+
+User-agent: Googlebot-Apps
+Disallow: /
+
+User-agent: Googlebot-Android
+Disallow: /
+
+User-agent: Googlebot-CrashHandler
+Disallow: /
+
+User-agent: Googlebot-Video-Proxy
+Disallow: /
+
+User-agent: Googlebot-SiteVerification
+Disallow: /
+
+User-agent: Googlebot-StructuredData
+Disallow: /
+
+User-agent: Googlebot-SearchConsole
+Disallow: /
+
+User-agent: Googlebot-AdSense
+Disallow: /
+
+User-agent: Googlebot-DoubleClick
+Disallow: /
+
+User-agent: Googlebot-AdWords
+Disallow: /
+
+User-agent: Googlebot-TagManager
+Disallow: /
+
+User-agent: Googlebot-Analytics
+Disallow: /
+
+User-agent: Googlebot-Optimize
+Disallow: /
+
+User-agent: Googlebot-DataStudio
+Disallow: /
+
+User-agent: Googlebot-Firebase
+Disallow: /
+
+User-agent: Googlebot-CloudFunctions
+Disallow: /
+
+User-agent: Googlebot-CloudRun
+Disallow: /
+
+User-agent: Googlebot-CloudBuild
+Disallow: /
+
+User-agent: Googlebot-CloudDeploy
+Disallow: /
+
+User-agent: Googlebot-ContainerRegistry
+Disallow: /
+
+User-agent: Googlebot-ArtifactRegistry
+Disallow: /
+
+User-agent: Googlebot-BuildTriggers
+Disallow: /
+
+User-agent: Googlebot-CloudScheduler
+Disallow: /
+
+User-agent: Googlebot-CloudTasks
+Disallow: /
+
+User-agent: Googlebot-CloudPubSub
+Disallow: /
+
+User-agent: Googlebot-CloudStorage
+Disallow: /
+
+User-agent: Googlebot-CloudSQL
+Disallow: /
+
+User-agent: Googlebot-BigQuery
+Disallow: /
+
+User-agent: Googlebot-Bigtable
+Disallow: /
+
+User-agent: Googlebot-Dataflow
+Disallow: /
+
+User-agent: Googlebot-Dataproc
+Disallow: /
+
+User-agent: Googlebot-CloudKMS
+Disallow: /
+
+User-agent: Googlebot-CloudIAM
+Disallow: /
+
+User-agent: Googlebot-CloudResourceManager
+Disallow: /
+
+User-agent: Googlebot-CloudBilling
+Disallow: /
+
+User-agent: Googlebot-CloudMonitoring
+Disallow: /
+
+User-agent: Googlebot-CloudLogging
+Disallow: /
+
+User-agent: Googlebot-CloudDebugger
+Disallow: /
+
+User-agent: Googlebot-CloudTrace
+Disallow: /
+
+User-agent: Googlebot-CloudErrorReporting
+Disallow: /
+
+User-agent: Googlebot-CloudSourceRepositories
+Disallow: /
+
+User-agent: Googlebot-CloudBuildArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudRelease
+Disallow: /
+
+User-agent: Googlebot-CloudDeployArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudRunArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudFunctionsArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudStorageArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudSQLArtifacts
+Disallow: /
+
+User-agent: Googlebot-BigQueryArtifacts
+Disallow: /
+
+User-agent: Googlebot-BigtableArtifacts
+Disallow: /
+
+User-agent: Googlebot-DataflowArtifacts
+Disallow: /
+
+User-agent: Googlebot-DataprocArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudKMSArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudIAMArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudResourceManagerArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudBillingArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudMonitoringArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudLoggingArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudDebuggerArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudTraceArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudErrorReportingArtifacts
+Disallow: /
+
+User-agent: Googlebot-CloudSourceRepositoriesArtifacts
+Disallow: /
+
+# 禁止爬取敏感目录
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+
+# 禁止爬取某些文件类型
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.pdf$
+
+# 站点地图（如果有的话，可以取消注释）
+# Sitemap: https://your-site.com/sitemap.xml
