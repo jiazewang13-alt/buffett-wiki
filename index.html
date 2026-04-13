@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>巴菲特百科 - 系统整理巴菲特投资思想的中文知识站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+        
+        /* Header */
+        .hero {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2d5a87 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #fff;
+            color: #1e3a5f;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Cards */
+        .section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3a5f;
+        }
+        
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            color: #1e3a5f;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .card ul {
+            list-style: none;
+        }
+        
+        .card li {
+            margin-bottom: 10px;
+        }
+        
+        .card a {
+            color: #2d5a87;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card a:hover {
+            text-decoration: underline;
+        }
+        
+        .card a::before {
+            content: "→";
+            margin-right: 8px;
+        }
+        
+        /* Timeline */
+        .timeline {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        
+        .timeline table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .timeline th,
+        .timeline td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .timeline th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #1e3a5f;
+        }
+        
+        .timeline tr:hover {
+            background: #f8f9fa;
+        }
+        
+        /* Quote */
+        .quote-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        
+        .quote-section blockquote {
+            font-size: 1.8rem;
+            font-style: italic;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+        
+        .quote-section footer {
+            opacity: 0.8;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e3a5f;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #64b5f6;
+            text-decoration: none;
+        }
+        
+        /* Content Pages */
+        .content-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background: white;
+            min-height: 100vh;
+        }
+        
+        .content-page h1 {
+            color: #1e3a5f;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #2d5a87;
+        }
+        
+        .content-page h2 {
+            color: #2d5a87;
+            margin: 40px 0 20px;
+            font-size: 1.5rem;
+        }
+        
+        .content-page h3 {
+            color: #333;
+            margin: 30px 0 15px;
+            font-size: 1.2rem;
+        }
+        
+        .content-page p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .content-page blockquote {
+            border-left: 4px solid #2d5a87;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #555;
+            font-style: italic;
+        }
+        
+        .content-page ul,
+        .content-page ol {
+            margin: 20px 0;
+            padding-left: 30px;
+        }
+        
+        .content-page li {
+            margin-bottom: 10px;
+        }
+        
+        .content-page table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .content-page th,
+        .content-page td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        
+        .content-page th {
+            background: #f5f7fa;
+            font-weight: 600;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: #2d5a87;
+            text-decoration: none;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .quote-section blockquote {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>巴菲特百科</h1>
+        <p>系统整理巴菲特生平、股东信、年会问答与投资思想的中文知识站</p>
+        <a href="#content" class="btn">开始探索 →</a>
+    </section>
+
+    <!-- Content Cards -->
+    <section class="section" id="content">
+        <div class="container">
+            <h2 class="section-title">内容导航</h2>
+            
+            <div class="cards">
+                <div class="card">
+                    <h3>📖 巴菲特生平</h3>
+                    <p>了解巴菲特的传奇人生，从童年卖口香糖到成为「奥马哈先知」的投资历程。</p>
+                    <ul>
+                        <li><a href="biography/overview.html">生平总览</a></li>
+                        <li><a href="biography/timeline.html">关键时间线</a></li>
+                        <li><a href="biography/berkshire.html">为何买下伯克希尔</a></li>
+                        <li><a href="biography/buffett-munger.html">与芒格的传奇合作</a></li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>💡 投资思想</h3>
+                    <p>深入学习巴菲特的核心投资原则与思想体系。</p>
+                    <ul>
+                        <li><a href="investment/principles.html">投资原则10条</a></li>
+                        <li><a href="investment/circle-of-competence.html">能力圈法则</a></li>
+                        <li><a href="investment/cash-view.html">关于现金的观点</a></li>
+                        <li><a href="investment/crash-1987.html">1987年股灾后的思考</a></li>
+                        <li><a href="investment/crisis-2008.html">2008年金融危机的启示</a></li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>📋 学习资源</h3>
+                    <p>掌握学习巴菲特投资思想的最佳方法和资源。</p>
+                    <ul>
+                        <li><a href="resources/letters-guide.html">股东信阅读指南</a></li>
+                        <li><a href="resources/meeting-guide.html">股东大会观看指南</a></li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>💬 经典语录</h3>
+                    <p>巴菲特最经典的20句原话及其出处，浓缩一生的投资智慧。</p>
+                    <ul>
+                        <li><a href="quotes/classic-20.html">巴菲特最经典20句原话</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section" style="background: #eef2f7;">
+        <div class="container">
+            <h2 class="section-title">巴菲特人生时间线</h2>
+            <div class="timeline">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>年份</th>
+                            <th>里程碑事件</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><strong>1930</strong></td><td>出生于美国内布拉斯加州奥马哈市</td></tr>
+                        <tr><td><strong>1941</strong></td><td>11岁，购买人生第一支股票</td></tr>
+                        <tr><td><strong>1950</strong></td><td>进入哥伦比亚商学院，师从格雷厄姆</td></tr>
+                        <tr><td><strong>1956</strong></td><td>创立巴菲特合伙公司</td></tr>
+                        <tr><td><strong>1962</strong></td><td>开始买入伯克希尔·哈撒韦股票</td></tr>
+                        <tr><td><strong>1965</strong></td><td>正式控制伯克希尔·哈撒韦</td></tr>
+                        <tr><td><strong>1978</strong></td><td>查理·芒格加入伯克希尔</td></tr>
+                        <tr><td><strong>1987</strong></td><td>经历黑色星期一股市崩盘</td></tr>
+                        <tr><td><strong>2008</strong></td><td>在金融危机中逆势投资</td></tr>
+                    </tbody>
+                </table>
+                <div style="text-align: center; margin-top: 30px;">
+                    <a href="biography/timeline.html" class="btn" style="background: #1e3a5f; color: white;">查看完整时间线 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <blockquote>"价格是你付出的，价值是你得到的。"</blockquote>
+        <footer>—— 沃伦·巴菲特，2008年致股东信</footer>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>巴菲特百科 · 系统整理巴菲特投资思想的中文知识站</p>
+        <p style="margin-top: 10px; opacity: 0.8;">本站仅供学习交流使用</p>
+    </footer>
+</body>
+</html>
